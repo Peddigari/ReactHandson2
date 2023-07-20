@@ -31,17 +31,24 @@ class FormClass extends React.Component {
 
         }
         this.state.EmpData.push(newObj)
-        this.setState({ EmpData: this.state.EmpData })
+        this.setState({ 
+            EmpData: this.state.EmpData,
+            Name:'',
+            Dept:'',
+            Rating:''
+         })
         console.log(this.state.EmpData)
     }
     render() {
         return (
             <>
                 <div className="mainContainer">
-                    <div className="head">
+                
+                    {/* <div className="head">
                         <p>EMPLOYEE FEEDBACK FORM</p>
-                    </div>
+                    </div> */}
                     <div className="sec">
+                    <p className="head">EMPLOYEE FEEDBACK FORM</p>
                         <form className="child">
                             <div>
                                 <label htmlFor="name">NAME:</label>

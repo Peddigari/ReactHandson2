@@ -1,12 +1,21 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(lightgreen,pink,skyblue);
+    min-height: 100vh;
+  }
+
 .mainContainer{ 
     padding: 0px;
     margin: 0px;
-    background-image: linear-gradient(lightgreen,pink,skyblue);
-    height: 100vh;
+    /* background-image: linear-gradient(lightgreen,pink,skyblue); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
     overflow-y: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     flex-direction: column;
 }
 .head{
